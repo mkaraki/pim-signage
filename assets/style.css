@@ -1,0 +1,57 @@
+html, body {
+    background-color: black;
+    color: white;
+}
+
+#signage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+}
+
+#signage>img.two {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:50%;
+    object-fit: contain;
+}
+
+#signage>img.full {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    object-fit: contain;
+}
+
+#signage.fadeout {
+    animation: fadeout 0.5s forwards;
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#signage.fadein {
+    animation: fadein 0.5s forwards;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.signage-pim-logo {
+    background-color: white;
+    padding: 150px !important;
+    width: calc(100% - 300px) !important;
+    height: calc(100% - 300px) !important;
+}

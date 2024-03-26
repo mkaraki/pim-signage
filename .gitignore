@@ -1,0 +1,5 @@
+*.html
+!index.html
+/signage.list.js
+/img
+/pimsignimg
